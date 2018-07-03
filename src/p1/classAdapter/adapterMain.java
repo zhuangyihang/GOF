@@ -10,7 +10,7 @@ package p1.classAdapter;
 
 public class adapterMain {
   public static void main(String[] args) {
-    PrintBanner banner = new PrintBanner("test");
+    Print banner = new PrintBanner("test");
     banner.printStrong();
     banner.printWeak();
   }

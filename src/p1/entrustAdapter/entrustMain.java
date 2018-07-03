@@ -11,7 +11,7 @@ package p1.entrustAdapter;
 public class entrustMain {
   public static void main(String[] args) {
 
-    PrintBanner pb = new PrintBanner("test");
+    Print pb = new PrintBanner("test");
     pb.printStrong();
     pb.printWeak();
   }
