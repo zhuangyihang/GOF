@@ -6,14 +6,20 @@
  * (C) Copyright 2018,Pugongying Meeting Service Company, All Rights Reserved. This software is the
  * proprietary information of Pugongying Meeting Service, Inc. Use is subject to license terms.
  */
-package p1.entrustAdapter;
+package p2.templateMethod;
 
-public class entrustMain {
-  public static void main(String[] args) {
+public abstract class AbstractDisplay {
 
-    PrintBanner pb = new PrintBanner("test");
-    pb.printStrong();
-    pb.printWeak();
+  public abstract void close();
+
+  public final void display() {
+    open();
+    print();
+    print();
+    close();
   }
 
+  public abstract void open();
+
+  public abstract void print();
 }
